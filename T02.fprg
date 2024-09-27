@@ -4,9 +4,9 @@
         <attribute name="name" value="T01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 11:42:49 AM"/>
+        <attribute name="saved" value="2024-09-27 11:46:01 AM"/>
         <attribute name="created" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0wNjswMzoxMzoxNiBQTTsyNjg3"/>
-        <attribute name="edited" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0yNzsxMTo0Mjo0OSBBTTsxMTsyODM5"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0yNzsxMTo0NjowMSBBTTsxMjsyODMy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,6 @@
             <declare name="ISBN, Judul, Penulis, Penerbit, Formatbuku, Ket" type="String" array="False" size=""/>
             <declare name="Tahunterbit, Stok" type="Integer" array="False" size=""/>
             <declare name="Hargapembelian, Minimummargin, Rating" type="Real" array="False" size=""/>
-            <assign variable="Ket" expression="&quot;&quot;"/>
             <input variable="ISBN"/>
             <input variable="Judul"/>
             <input variable="Penulis"/>

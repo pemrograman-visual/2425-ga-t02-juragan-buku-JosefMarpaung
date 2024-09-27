@@ -11,8 +11,7 @@ public class T02 {
         String iSBN, judul, penulis, penerbit, formatbuku, ket;
         int tahunterbit, stok;
         double hargapembelian, minimummargin, rating;
-s
-        ket = "";
+
         iSBN = input.nextLine();
         judul = input.nextLine();
         penulis = input.nextLine();
