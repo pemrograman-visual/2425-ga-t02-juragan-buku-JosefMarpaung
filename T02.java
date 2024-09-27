@@ -1,5 +1,6 @@
 // 12S24005-MIA NATHANIA SIBUEA
 // 12S24036-JOSEF CHRISTIAN MARPAUNG
+
 import java.util.*;
 import java.lang.Math;
 
@@ -10,7 +11,7 @@ public class T02 {
         String iSBN, judul, penulis, penerbit, formatbuku, ket;
         int tahunterbit, stok;
         double hargapembelian, minimummargin, rating;
-
+s
         ket = "";
         iSBN = input.nextLine();
         judul = input.nextLine();
@@ -23,10 +24,10 @@ public class T02 {
         stok = Integer.parseInt(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7) {
-            ket = "Bestpick";
+            ket = "Best Pick";
         } else {
             if (rating >= 4.5) {
-                ket = "Mustread";
+                ket = "Must Read";
             } else {
                 if (rating >= 4.0) {
                     ket = "Recommended";
@@ -50,4 +51,3 @@ public class T02 {
         return String.format("%." + digits + "f", value);
     }
 }
-
