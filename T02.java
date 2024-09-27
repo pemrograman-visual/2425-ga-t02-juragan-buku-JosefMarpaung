@@ -1,6 +1,5 @@
 // 12S24005-MIA NATHANIA SIBUEA
 // 12S24036-JOSEF CHRISTIAN MARPAUNG
-
 import java.util.*;
 import java.lang.Math;
 
