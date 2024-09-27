@@ -9,7 +9,7 @@ public class T02 {
     public static void main(String[] args) {
         String iSBN, judul, penulis, penerbit, formatbuku, ket;
         int tahunterbit, stok;
-        double hargapembelian, minimummargin, rating, bestPick, mustRead, recommended, average, lowRating;
+        double hargapembelian, minimummargin, rating;
 
         iSBN = input.nextLine();
         judul = input.nextLine();
@@ -40,7 +40,11 @@ public class T02 {
                 }
             }
         }
-        System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + ket + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + rating);
+        System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbuku + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + toFixed(rating,1) + "|" + ket);
+    }
+    
+    private static String toFixed(double value, int digits) {
+        return String.format("%." + digits + "f", value);
     }
 }
 
