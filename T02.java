@@ -34,11 +34,7 @@ public class T02 {
                     if (rating >= 3.0) {
                         ket = "Average";
                     } else {
-                        if (rating >= 3.0) {
-                            ket = "Low";
-                        } else {
-                            ket = "";
-                        }
+                        ket = "Low";
                     }
                 }
             }

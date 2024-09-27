@@ -4,9 +4,9 @@
         <attribute name="name" value="T01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 11:52:09 AM"/>
+        <attribute name="saved" value="2024-09-27 01:53:40 PM"/>
         <attribute name="created" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0wNjswMzoxMzoxNiBQTTsyNjg3"/>
-        <attribute name="edited" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0yNzsxMTo1MjowOSBBTTsxMzsyODM4"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0yNzswMTo1Mzo0MCBQTTsxNTsyODUw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -24,34 +24,27 @@
             <input variable="Minimummargin"/>
             <input variable="Stok"/>
             <input variable="Rating"/>
-            <if expression="rating &gt;=4.7">
+            <if expression="Rating &gt;=4.7">
                 <then>
                     <assign variable="Ket" expression="&quot;Best Pick&quot;"/>
                 </then>
                 <else>
-                    <if expression="rating&gt;=4.5">
+                    <if expression="Rating&gt;=4.5">
                         <then>
                             <assign variable="Ket" expression="&quot;Must Read&quot;"/>
                         </then>
                         <else>
-                            <if expression="rating&gt;=4.0">
+                            <if expression="Rating&gt;=4.0">
                                 <then>
                                     <assign variable="Ket" expression="&quot;Recommended&quot;"/>
                                 </then>
                                 <else>
-                                    <if expression="rating&gt;=3.0">
+                                    <if expression="Rating&gt;=3.0">
                                         <then>
                                             <assign variable="Ket" expression="&quot;Average&quot;"/>
                                         </then>
                                         <else>
-                                            <if expression="rating&lt;3.0">
-                                                <then>
-                                                    <assign variable="Ket" expression="&quot;Low&quot;"/>
-                                                </then>
-                                                <else>
-                                                    <assign variable="Ket" expression="&quot;&quot;"/>
-                                                </else>
-                                            </if>
+                                            <assign variable="Ket" expression="&quot;Low&quot;"/>
                                         </else>
                                     </if>
                                 </else>
