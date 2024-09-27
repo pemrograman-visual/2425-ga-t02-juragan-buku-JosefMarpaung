@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T01"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-27 11:37:08 AM"/>
+        <attribute name="created" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0wNjswMzoxMzoxNiBQTTsyNjg3"/>
+        <attribute name="edited" value="QVNVUztERVNLVE9QLVBDN1QyVVY7MjAyNC0wOS0yNzsxMTozNzowOCBBTTsxMDsyODM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ISBN, Judul, Penulis, Penerbit, Formatbuku, Ket" type="String" array="False" size=""/>
+            <declare name="Tahunterbit, Stok" type="Integer" array="False" size=""/>
+            <declare name="Hargapembelian, Minimummargin, Rating" type="Real" array="False" size=""/>
+            <assign variable="Ket" expression="&quot;&quot;"/>
+            <input variable="ISBN"/>
+            <input variable="Judul"/>
+            <input variable="Penulis"/>
+            <input variable="Tahunterbit"/>
+            <input variable="Penerbit"/>
+            <input variable="Formatbuku"/>
+            <input variable="Hargapembelian"/>
+            <input variable="Minimummargin"/>
+            <input variable="Stok"/>
+            <input variable="Rating"/>
+            <if expression="rating &gt;=4.7">
+                <then>
+                    <assign variable="Ket" expression="&quot;Bestpick&quot;"/>
+                </then>
+                <else>
+                    <if expression="rating&gt;=4.5">
+                        <then>
+                            <assign variable="Ket" expression="&quot;Mustread&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="rating&gt;=4.0">
+                                <then>
+                                    <assign variable="Ket" expression="&quot;Recommended&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="rating&gt;=3.0">
+                                        <then>
+                                            <assign variable="Ket" expression="&quot;Average&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="rating&gt;=3.0">
+                                                <then>
+                                                    <assign variable="Ket" expression="&quot;Low&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="Ket" expression="&quot;&quot;"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="ISBN&amp;&quot;|&quot;&amp;Judul&amp;&quot;|&quot;&amp;Penulis&amp;&quot;|&quot;&amp;Tahunterbit&amp;&quot;|&quot;&amp;Penerbit&amp;&quot;|&quot;&amp;Formatbuku&amp;&quot;|&quot;&amp;Hargapembelian&amp;&quot;|&quot;&amp;Minimummargin&amp;&quot;|&quot;&amp;Stok&amp;&quot;|&quot;&amp;tofixed(Rating,1)&amp;&quot;|&quot;&amp;Ket" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

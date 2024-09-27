@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T02 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class T02 {
         int tahunterbit, stok;
         double hargapembelian, minimummargin, rating;
 
+        ket = "";
         iSBN = input.nextLine();
         judul = input.nextLine();
         penulis = input.nextLine();
@@ -22,19 +23,21 @@ public class T02 {
         stok = Integer.parseInt(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7) {
-            ket = "bestpick";
+            ket = "Bestpick";
         } else {
             if (rating >= 4.5) {
-                ket = "mustread";
+                ket = "Mustread";
             } else {
                 if (rating >= 4.0) {
-                    ket = "recommended";
+                    ket = "Recommended";
                 } else {
                     if (rating >= 3.0) {
-                        ket = "average";
+                        ket = "Average";
                     } else {
                         if (rating >= 3.0) {
-                            ket = "low";
+                            ket = "Low";
+                        } else {
+                            ket = "";
                         }
                     }
                 }
